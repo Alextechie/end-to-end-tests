@@ -50,7 +50,7 @@ app.post("/multiply", async (req, res) => {
             answer: result,
             type: "multiplication"
         }
-    })
+    });
 
     res.json({answer: result, id: request.id})
 })
