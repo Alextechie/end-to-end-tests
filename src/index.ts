@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 app.post("/sum", async (req: Request, res: Response) => {
     // get the data from a client
     const { a, b } = req.body;
-    const result = a - b;
+    const result = a + b;
 
     if (a > 100000 || b > 1000000) {
         res.status(422).json({
